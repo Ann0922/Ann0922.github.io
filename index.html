@@ -10,6 +10,7 @@
 		font-size:18px;
 		margin-left: auto;
 		margin-right: auto;
+		width: 70%;
 	}
 
 	h1 {
@@ -25,12 +26,6 @@
 		color: #208799;
 	}
 
-	td.dl-link {
-		height: 160px;
-		text-align: center;
-		font-size: 22px;
-	}
-
 	hr
 	{
 		border: 0;
@@ -38,17 +33,14 @@
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	}
 
-	p.small {
-		font-size: 12px
-	}
 </style>
 
 <html>
   <head>
-		<title>Pose and Texture Guided Multi-View Fashion Design Synthesis</title>
+		<title>PLAN</title>
   </head>
 
-  <body>
+  <body >
     <br>
     <center>
     <span style="font-size:36px">Pose and Texture Guided Multi-View Fashion Design Synthesis</span>
@@ -72,15 +64,15 @@
 	</table>
 
     <br>
-    <table align=center width=2000px>
+    <div align=center>
         <tr>
             <td>
                 <center>
-                    <img src = "images/teaser.png" height="428px"></img></a>
+                    <a href="images/teaser.png"><img src = "images/teaser.png"  width=100% height=100%></img></a>
                 </center>
             </td>
         </tr>
-    </table>
+    </div>
 
     <br>
     <p style="text-align:justify">
@@ -90,45 +82,35 @@
 		 <!-- <table align=center width=550px> -->
 
 		 <!-- <table align=center width=550px> -->
-    <div id='data'>
-      <table align=center width=1100>
-        <center><h1>Data</h1></center>
-
-          <tr> <center><img src = "images/trainsubjects.png" height="140px"></img> </center></tr>
-          <tr>
-            <td width='400px'>
-            <p style="text-align:justify">
-                We evaluate our proposed PLAN on the Fashion-Gen dataset because other fashion datasets (e.g., DeepFashion, Fashionist, Fashionpedia) lack diversified clothing textures or multi-view images. Fashion-Gen contains 293,008 images of resolution 256×256, in which each fashion item is photographed from a variety of angles. We select four dominant clothing categories (i.e. dresses, shirts, sweaters and tops) from 48 main fashion categories of the Fashion-Gen dataset for evaluation. On the other hand, we select front view, side view and back view as the view set since these three views are the most representative ones in the Fashion-Gen dataset. In total, we obtain 12,415 triplets, where each triplet contains three views of the same clothing item. We randomly select 10,416 triplets as our training set and select 1,999 triplets for testing.
-            </p>
+    <table align=center>
+        <tr>
+            <td>
+                <center><h1>Data</h1></center>
+                <center>
+                    <a href="images/trainsubjects.png"><img src = "images/trainsubjects.png"  width=100% height=100%></img></a>
+                </center>
             </td>
-          </tr>
-      </table>
-     </div>
+        </tr>
+    </table>
+
     <br>
-
-		<!-- <div id='code'>
-  		  <table align=center width=1100>
-	 		<center><h1>Code</h1></center>
-
-	 		  <tr> <center>
-	 		  	<p style="text-align:justify">
-	 		  		Code and models are available for research purposes only by contacting the authors at dancecode [at] berkeley [dot] edu.
-	 		  	</p>
-	 		  </center></tr>
-
-  		  </table>
-  		 </div>
-		  <br> -->
+    <p style="text-align:justify">
+                We evaluate our proposed PLAN on the Fashion-Gen dataset because other fashion datasets (e.g., DeepFashion, Fashionist, Fashionpedia) lack diversified clothing textures or multi-view images. Fashion-Gen contains 293,008 images of resolution 256*256, in which each fashion item is photographed from a variety of angles. We select four dominant clothing categories (i.e. dresses, shirts, sweaters and tops) from 48 main fashion categories of the Fashion-Gen dataset for evaluation. On the other hand, we select front view, side view and back view as the view set since these three views are the most representative ones in the Fashion-Gen dataset. In total, we obtain 12,415 triplets, where each triplet contains three views of the same clothing item. We randomly select 10,416 triplets as our training set and select 1,999 triplets for testing.
+    </p>
     <hr>
 
-    <table align=center width=1500>
-        <center><h1>Results</h1></center>
-        <tr> <center><img src = "images/results.png" height="667px"></img> </center></tr>
+    <table align=center>
+        <tr>
+            <td>
+                <center><h1>Results</h1></center>
+                <center>
+                    <a href="images/results.png"><img src = "images/results.png"  width=100% height=100%></img></a>
+                </center>
+            </td>
+        </tr>
     </table>
     <br>
     <hr>
-
-    <br>
 
 </body>
 </html>
