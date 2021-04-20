@@ -76,7 +76,18 @@
 
     <br>
     <p style="text-align:justify">
-      In this paper, we explore a new AI-assisted fashion design problem for helping designers rapidly visualize an original garment, which can be effectively utilized by fashion design systems and machines to speed-up the design process. As illustrated in Figure 1, given a guided pose along with texture patches of tops and bottoms, our goal is to automatically generate a series of fashion designs with various clothed models from different views. This would allow fashion designers to use automated tools to get inspiration and augment their creativity since the texture reveals the most important attributes of the cloth like patterns, colours, and prints while the pose simulates different viewports.
+        In this paper, we investigate a new problem of generating a series of
+fashion design images conditioned on a guided human pose along
+with texture examples of arbitrary sizes for helping fashion designers rapidly visualize an original garment. Instead of learning a direct
+mapping, we propose a novel Photo-reaListic fAshion syNthesis
+(PLAN) framework, which decomposes the direct mapping into
+two manageable stages. In the first stage, we employ a semantic
+layout generative network to transform an input human pose into a
+series of person semantic layouts. In the second stage, we propose a
+texture synthesis network to synthesize textures on all transformed
+semantic layouts. Specifically, we design a novel attentive texture
+transfer mechanism for precisely expanding texture patches to the
+irregular clothing regions of the target fashion designs.
     </p>
     <hr>
 		 <!-- <table align=center width=550px> -->
@@ -104,7 +115,7 @@
             <td>
                 <center><h1>Results</h1></center>
                 <center>
-                    <a href="images/results1.PNG"><img src = "images/results1.PNG"  width=100% height=100%></img></a>
+                    <a href="images/results1.PNG"><img src = "images/results1.PNG"  width=80% height=80%></img></a>
                 </center>
                 <center>
                     <a href="images/results2.PNG"><img src = "images/results2.PNG"  width=100% height=100%></img></a>
